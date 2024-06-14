@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
-import { restoreState, saveState } from './localStorage/localStorage'
-import s2 from '../../s1-main/App.module.css'
-import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
-import s from './HW6.module.css'
+import React, {useState} from 'react';
+import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan';
+import {restoreState, saveState} from './localStorage/localStorage';
+import s2 from '../../s1-main/App.module.css';
+import SuperButton from '../hw04/common/c2-SuperButton/SuperButton';
+import s from './HW6.module.css';
 
 /*
  * 1 - в файле SuperEditableSpan.tsx дописать логику функций onEnterCallback, onBlurCallback, onDoubleClickCallBack
@@ -12,15 +12,15 @@ import s from './HW6.module.css'
  */
 
 const HW6 = () => {
-    const [value, setValue] = useState<string>('')
-
+    const [value, setValue] = useState<string>('');
     const save = () => {
-        saveState<string>('hw6-editable-span-value', value)
-    }
+        saveState<string>('hw6-editable-span-value', value);
+    };
+
     const restore = () => {
         // делают студенты
-
-    }
+        setValue(restoreState<string>('hw6-editable-span-value', value));
+    };
 
     return (
         <div id={'hw6'}>
@@ -35,7 +35,7 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Edit text',
                         }}
                     />
                 </div>
@@ -54,7 +54,7 @@ const HW6 = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HW6
+export default HW6;
