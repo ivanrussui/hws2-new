@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
-import s from './HW8.module.css'
-import s2 from '../../s1-main/App.module.css'
-import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
-import User from './User'
+import React, {useState} from 'react';
+import {homeWorkReducer} from './bll/homeWorkReducer';
+import s from './HW8.module.css';
+import s2 from '../../s1-main/App.module.css';
+import SuperButton from '../hw04/common/c2-SuperButton/SuperButton';
+import User from './User';
 
 /*
 * 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
@@ -25,33 +25,33 @@ const initialPeople: UserType[] = [
     {_id: 3, name: 'Виктор', age: 44},
     {_id: 4, name: 'Дмитрий', age: 40},
     {_id: 5, name: 'Ирина', age: 55},
-]
+];
 
 const HW8 = () => {
-    const [people, setPeople] = useState<UserType[]>(initialPeople)
-    const [currentSort, setCurrentSort] = useState('')
+    const [people, setPeople] = useState<UserType[]>(initialPeople);
+    const [currentSort, setCurrentSort] = useState('');
 
-    const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
+    const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>);
 
     const sortUp = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
-        ) // в алфавитном порядке a.name > b.name
-        setCurrentSort('up')
-    }
+        ); // в алфавитном порядке a.name > b.name
+        setCurrentSort('up');
+    };
 
     const sortDown = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'})
-        ) // в обратном порядке a.name < b.name}
-        setCurrentSort('down')
-    }
+        ); // в обратном порядке a.name < b.name}
+        setCurrentSort('down');
+    };
     const check18 = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'check', payload: 18})
-        ) // совершеннолетние
-        setCurrentSort('18')
-    }
+        ); // совершеннолетние
+        setCurrentSort('18');
+    };
 
     return (
         <div id={'hw3'}>
@@ -89,13 +89,12 @@ const HW8 = () => {
                             <td className={s.ageCol}>Age</td>
                         </tr>
                         </thead>
-
                         <tbody>{finalPeople}</tbody>
                     </table>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HW8
+export default HW8;
