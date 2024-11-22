@@ -1,14 +1,25 @@
 .buttonsContainer {
+    margin-top: 55px;
+    display: flex;
+    column-gap: 21px;
 }
 
 .clock {
+    position: relative;
 }
 
 .watch {
+    cursor: url("cursor.png"), pointer;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .watch strong {
+    font-weight: bold;
 }
 
 .more {
+    position: absolute;
+    top: calc(55px - 27px);
+    color: #00000080;
 }
