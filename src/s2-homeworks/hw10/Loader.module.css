@@ -1,3 +1,17 @@
 .loader {
     /*свг и/или анимация*/
+    /*background-image: url("Loader.png");  !* png *!*/
+    background: url("Loader.svg") no-repeat center / cover; /* svg */
+    width: 90px;
+    height: 90px;
+    animation: circle 1.5s infinite ease-in-out;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
