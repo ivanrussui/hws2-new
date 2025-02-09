@@ -8,7 +8,7 @@
     justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0 0 2px 0 #1D21261A, 0 0 40px 0 #1D212621;
-    min-height: var(--header_height);
+    min-height: var(--header-height);
     padding: 0 70px;
     margin-bottom: 47px;
 }

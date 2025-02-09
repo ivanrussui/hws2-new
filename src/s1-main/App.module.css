@@ -1,23 +1,30 @@
+:root {
+    --max-width: 1280px;
+}
+
 .App {
-    --header_height: 60px;
+    --header-height: 60px;
     margin: 0 auto;
     width: 100%;
     position: relative;
 }
 
 .hw {
-    max-width: 1280px;
-    padding: 24px 70px 35px;
+    --hw-padding-top: 24px;
+    --hw-padding-bottom: 35px;
+    max-width: var(--max-width);
+    padding: var(--hw-padding-top) 70px var(--hw-padding-bottom);
     margin: 10px auto 37px;
     border-top: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
 }
 
 .hwTitle {
-    max-width: 1280px;
+    max-width: var(--max-width);
     padding-left: 70px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
 }
+
