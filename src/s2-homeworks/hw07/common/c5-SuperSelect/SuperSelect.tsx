@@ -4,12 +4,13 @@ import React, {
     ChangeEvent, useState, useEffect,
 } from 'react';
 import s from './SuperSelect.module.css';
+import {ArrType} from '../../HW7';
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    options?: any[]
-    onChangeOption?: (option: any) => void
+    options?: ArrType[]
+    onChangeOption?: (option: number) => void
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = ({
@@ -35,7 +36,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
 
     const toggleOpen = () => setIsOpen(!isOpen);
 
-    const mappedOptions: any[] = options
+    const mappedOptions: JSX.Element[] = options
         ? options.map((o) => (
             <option
                 id={'hw7-option-' + o.id}
@@ -49,7 +50,8 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         : []; // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        onChangeOption?.(e.currentTarget.value);
+        // делают студенты
+        onChangeOption?.(+e.currentTarget.value);
     };
 
     const finalSelectClassName = s.select + (className ? ' ' + className : '');

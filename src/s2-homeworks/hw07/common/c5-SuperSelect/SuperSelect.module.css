@@ -16,6 +16,8 @@
     border-radius: 2px;
     font-size: 14px;
     cursor: pointer;
+    background-color: var(--background);
+    color: var(--color);
 }
 
 .select:focus {
@@ -40,6 +42,10 @@
     pointer-events: none;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
+}
+
+[data-theme='3'] .customSelectWrapper::after {
+    filter: invert(1);
 }
 
 .customSelectWrapper.open::after {

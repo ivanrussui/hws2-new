@@ -46,6 +46,11 @@
     line-height: 20px;
 }
 
+[data-theme='3'] .friendName,
+[data-theme='3'] .friendMessageText {
+    filter: invert(1);
+}
+
 .friendTime {
     margin: 5px 10px;
     font-weight: 600;

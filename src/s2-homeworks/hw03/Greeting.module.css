@@ -69,3 +69,8 @@
     line-height: 17px;
     color: #000000;
 }
+
+[data-theme='3'] .text,
+[data-theme='3'] .greeting {
+    filter: invert(1);
+}
