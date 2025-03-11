@@ -45,9 +45,17 @@
     background-size: 60% 60%;
 }
 
+[data-theme='3'] .label > span::before {
+    filter: invert(1);
+}
+
 /* стили для радиокнопки, находящейся в состоянии checked */
 .label > input:checked + span::before {
     border-color: #000000;
     background-color: #FFFFFF;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='000000'/%3e%3c/svg%3e");
+}
+
+[data-theme='2'] .label > input:checked + span::before {
+    background-color:  #DDEEFF;
 }

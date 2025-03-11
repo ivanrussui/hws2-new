@@ -11,6 +11,7 @@
     min-height: var(--header-height);
     padding: 0 70px;
     margin-bottom: 47px;
+    color: black;
 }
 
 .header h1 {

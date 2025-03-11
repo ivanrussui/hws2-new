@@ -23,3 +23,7 @@
     top: calc(55px - 27px);
     color: #00000080;
 }
+
+[data-theme='3'] .more {
+    filter: invert(1);
+}

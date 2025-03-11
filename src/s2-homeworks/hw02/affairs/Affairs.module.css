@@ -53,3 +53,8 @@
     flex-wrap: wrap;
     max-width: 450px;
 }
+
+[data-theme='3'] .affairs button {
+    /*filter: invert(1);*/
+    color: white;
+}

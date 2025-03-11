@@ -9,6 +9,10 @@
     border-bottom: none;
 }
 
+[data-theme='3'] .item {
+    filter: invert(1);
+}
+
 .users {
     margin-top: 18px;
     display: grid;

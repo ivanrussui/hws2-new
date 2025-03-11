@@ -19,5 +19,28 @@ html {
 }
 
 .select {
+    background-color: var(--background);
+    color: var(--color);
+    min-height: 36px;
+    min-width: 171px;
+    outline: 1px solid #323232;
+}
 
+[data-theme='3'] .select {
+    outline: 1px solid #C2C2C2;
+}
+
+.selectWrapper {
+    margin-top: calc(56px - var(--hw-padding-top));
+    margin-bottom: calc(244px - var(--hw-padding-bottom));
+    position: relative;
+}
+
+.selectWrapper::before {
+    content: 'Выберите тему';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 14px;
+    z-index: 1;
 }
