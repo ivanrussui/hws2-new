@@ -1,22 +1,41 @@
 .buttonsContainer {
+    display: flex;
+    gap: 24px;
+    margin-top: calc(33px - var(--hw-padding-top));
 }
 
 .responseContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto; /* две колонки под размер контента */
+    align-items: center;
+    justify-content: center;
+    gap: 94px;
+    min-height: calc(273px - 30px);
 }
 
 .imageContainer {
 }
 
 .image {
+    max-width: 100%;
 }
 
 .textContainer{
+    max-width: 510px;
 }
 
 .code {
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .text {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .info {
+    font-size: 16px;
+    font-weight: 500;
 }
