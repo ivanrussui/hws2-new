@@ -1,9 +1,8 @@
-import React, {DetailedHTMLProps, InputHTMLAttributes, ReactNode, useState} from 'react'
-import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
+import React, {DetailedHTMLProps, InputHTMLAttributes, ReactNode, useState} from 'react';
+import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText';
 
 // тип пропсов обычного инпута
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement>
+type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
 // здесь мы говорим что у нашего инпута будут такие же пропсы как у обычного инпута, кроме type
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
@@ -22,28 +21,29 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
     {
         onChangeText,
         onDebouncedChange,
-
         ...restProps // все остальные пропсы попадут в объект restProps
     }
 ) => {
-    const [timerId, setTimerId] = useState<number | undefined>(undefined)
+    const [timerId, setTimerId] = useState<number | undefined>(undefined);
 
     const onChangeTextCallback = (value: string) => {
-        onChangeText?.(value)
+        onChangeText?.(value);
 
         if (onDebouncedChange) {
             // делает студент
-
             // остановить предыдущий таймер
+            setTimerId(undefined);
             // запустить новый на 1500ms, в котором вызовется функция
-
-            //
+            const timerId = setTimeout(() => {
+                onDebouncedChange(value);
+            }, 1500);
+            setTimerId(+timerId);
         }
-    }
+    };
 
     return (
         <SuperInputText onChangeText={onChangeTextCallback} {...restProps}/>
-    )
-}
+    );
+};
 
-export default SuperDebouncedInput
+export default SuperDebouncedInput;

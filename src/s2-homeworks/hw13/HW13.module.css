@@ -1,17 +1,14 @@
 .buttonsContainer {
+    margin-top: 33px;
     display: flex;
     gap: 24px;
-    margin-top: calc(33px - var(--hw-padding-top));
 }
 
 .responseContainer {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: auto auto; /* две колонки под размер контента */
+    min-height: 373px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    gap: 94px;
-    min-height: calc(273px - 30px);
 }
 
 .imageContainer {

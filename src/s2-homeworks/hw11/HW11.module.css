@@ -1,9 +1,8 @@
 .container {
+    margin-top: 68px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 42px;
-    margin-top: calc(69px - var(--hw-padding-top));
-    margin-bottom: calc(189px - var(--hw-padding-bottom));
+    gap: 40px;
 }
 
 .wrapper {

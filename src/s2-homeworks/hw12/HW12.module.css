@@ -31,8 +31,7 @@ html {
 }
 
 .selectWrapper {
-    margin-top: calc(56px - var(--hw-padding-top));
-    margin-bottom: calc(244px - var(--hw-padding-bottom));
+    margin-top: 56px;
     position: relative;
 }
 

@@ -5,6 +5,7 @@
 }
 
 .imageAndText {
+    margin-top: 24px;
     position: relative;
     display: flex;
     align-items: flex-end;
