@@ -33,11 +33,11 @@ const HW10 = () => {
 
             <div className={s2.hw} style={{minHeight: '336px'}}>
                 {isLoading ? (
-                    <div style={{padding: '9px'}} id={'hw10-loading'}>
+                    <div style={{marginTop: '42px'}} id={'hw10-loading'}>
                         <Loader/>
                     </div>
                 ) : (
-                    <SuperButton style={{marginTop: '18px'}}
+                    <SuperButton style={{marginTop: '42px'}}
                         id={'hw10-button-start-loading'}
                         onClick={setLoading}
                     >

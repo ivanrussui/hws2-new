@@ -1,8 +1,7 @@
 .affair {
     display: flex;
     align-items: center;
-    width: 185px;
-
+    justify-content: space-between;
     border: 1.5px solid var(--color);
     border-radius: 5px;
 }
@@ -10,9 +9,7 @@
 .name {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 145px;
-    height: 37px;
+    padding-left: 14px;
 }
 
 .closeButton {
@@ -21,11 +18,9 @@
     justify-content: center;
     width: 40px;
     height: 37px;
-
     background-color: transparent;
     border: none;
     border-left: 1.5px solid var(--color);
-
     font-weight: 900;
     cursor: pointer;
 }

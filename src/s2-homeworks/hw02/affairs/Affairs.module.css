@@ -1,7 +1,7 @@
 .buttonContainer {
     display: flex;
     gap: 24px;
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
 
 .all {
@@ -22,14 +22,11 @@
 
 .button {
     padding: 5px 15px;
-
     background: transparent;
     color: var(--color);
-
     border: 1px solid var(--color);
     border-radius: 15px;
     outline: none;
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -48,10 +45,11 @@
 }
 
 .affairs {
-    display: flex;
-    gap: 17px;
-    flex-wrap: wrap;
-    max-width: 450px;
+    display: grid;
+    grid-template-columns: 185px 185px;
+    grid-template-rows: repeat(3, 40px);
+    column-gap: 17px;
+    row-gap: 24px;
 }
 
 [data-theme='3'] .affairs button {
