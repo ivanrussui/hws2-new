@@ -38,6 +38,8 @@ const HW14 = () => {
                 // сохранить пришедшие данные
                 if (res) {
                     setTechs(res.data.techs);
+                } else {
+                    setTechs([]);
                 }
                 setLoading(false);
             });
