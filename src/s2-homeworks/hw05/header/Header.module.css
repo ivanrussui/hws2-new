@@ -6,16 +6,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FFFFFF;
-    box-shadow: 0 0 2px 0 #1D21261A, 0 0 40px 0 #1D212621;
     min-height: var(--header-height);
-    padding: 0 70px;
-    margin-bottom: 47px;
+    margin: 0 auto;
     color: black;
+    max-width: var(--max-width);
 }
 
 .header h1 {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
+}
+
+.wrapper {
+    background: #FFFFFF;
+    box-shadow: 0 0 2px 0 #1D21261A, 0 0 40px 0 #1D212621;
+    width: 100%;
+    margin-bottom: 47px;
 }

@@ -1,6 +1,8 @@
 :root {
     --max-width: 1280px;
     --min-height: 336px;
+    --spacing: 70px;
+    --padding-container: 0 var(--spacing);
 }
 
 .App {
@@ -8,23 +10,20 @@
     margin: 0 auto;
     width: 100%;
     position: relative;
+    padding-bottom: 60px;
 }
 
 .hw {
     max-width: var(--max-width);
     min-height: var(--min-height);
-    padding: 0 70px;
-    margin: 10px auto 37px;
-    border-top: 1px solid #D9D9D9;
-    border-bottom: 1px solid #D9D9D9;
+    margin: 0 auto;
+    position: relative;
 }
 
 .hwTitle {
     max-width: var(--max-width);
-    padding-left: 70px;
-    margin: 0 auto;
+    margin: 38px auto 10px;
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
 }
-

@@ -5,6 +5,10 @@
     min-width: 180px; /* ширина контейнера */
 }
 
+.smallWidth {
+    min-width: 44px;
+}
+
 .select {
     appearance: none; /* убираем стандартный стиль */
     -webkit-appearance: none; /* для Safari */
@@ -34,9 +38,9 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: 0;
-    width: 24px;
-    height: 24px;
+    right: 6px;
+    width: 10px;
+    height: 6px;
     background-image: url('./chevron-down.svg'); /* изображение */
     background-position: center;
     pointer-events: none;

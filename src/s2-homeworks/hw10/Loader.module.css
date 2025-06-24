@@ -1,10 +1,14 @@
 .loader {
     /*свг и/или анимация*/
-    /*background-image: url("Loader.png");  !* png *!*/
-    background: url("Loader.svg") no-repeat center / cover; /* svg */
+    /*background-image: url("img/Loader.png");  !* png *!*/
+    background: url("img/Loader.svg") no-repeat center / cover; /* svg */
     width: 90px;
     height: 90px;
     animation: circle 1.5s infinite ease-in-out;
+}
+
+.loaderBlue {
+    background: url("img/LoaderBlue.svg") no-repeat center / cover;
 }
 
 @keyframes circle {
@@ -15,3 +19,6 @@
         transform: rotate(360deg);
     }
 }
+
+
+

@@ -3,6 +3,7 @@ import s from './HW11.module.css';
 import s2 from '../../s1-main/App.module.css';
 import {restoreState, saveState} from '../hw06/localStorage/localStorage';
 import SuperRange from './common/c7-SuperRange/SuperRange';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - передать значения в оба слайдера
@@ -31,7 +32,7 @@ function HW11() {
     return (
         <div id={'hw11'}>
             <div className={s2.hwTitle}>Homework #11</div>
-
+            <Line/>
             <div className={s2.hw}>
                 <div className={s.container}>
                     <div className={s.wrapper}>
@@ -55,6 +56,7 @@ function HW11() {
                     </div>
                 </div>
             </div>
+            <Line/>
         </div>
     );
 }

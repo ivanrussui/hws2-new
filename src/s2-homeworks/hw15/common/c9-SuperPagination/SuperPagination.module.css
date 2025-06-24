@@ -1,11 +1,20 @@
 .pagination {
     display: flex;
+    align-items: center;
+    margin-top: 32px;
 }
 
-.text1 {
+[data-theme='3'] .pagination {
+    filter: invert(1);
+}
 
+
+.text1, .text2 {
+    margin: 0 10px 0 24px;
+    color: #0D0B0C;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text2 {
-
+    margin-left: 6px;
 }

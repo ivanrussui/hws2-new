@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Affairs from './affairs/Affairs';
 import s2 from '../../s1-main/App.module.css';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - описать типы AffairPriorityType, AffairType
@@ -57,6 +58,7 @@ function HW2() {
     return (
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>
+            <Line/>
             <div className={s2.hw}>
                 <Affairs
                     data={filteredAffairs}
@@ -65,6 +67,7 @@ function HW2() {
                     filter={filter}
                 />
             </div>
+            <Line/>
         </div>
     );
 }

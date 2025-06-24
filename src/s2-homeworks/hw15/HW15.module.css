@@ -1,27 +1,60 @@
-.tech {
+.tech, .developer {
     width: 50vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.developer {
-
-}
-
-.techHeader {
+.techHeader, .developerHeader {
     width: 50vw;
+    display: flex;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
-.developerHeader {
-
+.techHeader span, .developerHeader span {
+    display: flex;
+    margin-left: 5px;
+    cursor: pointer;
+    align-self: center;
 }
 
 .row {
     display: flex;
+    max-width: 606px;
+    padding: 11px 17px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.row:last-of-type {
+    border-bottom: none;
 }
 
 .rowHeader {
     display: flex;
+    align-items: center;
+    padding: 0 17px;
+    margin-top: 36px;
+    max-width: 606px;
+    min-height: 36px;
+    background: #E5E5E5;
+    color: #000000;
 }
 
 .loading {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+}
 
+.container {
+    min-height: 280px;
+    margin-bottom: 48px;
+}
+
+.opacity {
+    opacity: .1;
+    pointer-events: none; /* чтобы нельзя было кликать по элементам во время загрузки */
+    transition: opacity 0.3s;
 }

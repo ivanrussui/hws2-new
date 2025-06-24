@@ -5,6 +5,7 @@ import {loadingAC} from './bll/loadingReducer';
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton';
 import s2 from '../../s1-main/App.module.css';
 import {Loader} from './Loader';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - в файле loadingReducer.ts дописать типы и логику
@@ -30,7 +31,7 @@ const HW10 = () => {
     return (
         <div id={'hw10'}>
             <div className={s2.hwTitle}>Homework #10</div>
-
+            <Line/>
             <div className={s2.hw} style={{minHeight: '336px'}}>
                 {isLoading ? (
                     <div style={{marginTop: '42px'}} id={'hw10-loading'}>
@@ -38,13 +39,14 @@ const HW10 = () => {
                     </div>
                 ) : (
                     <SuperButton style={{marginTop: '42px'}}
-                        id={'hw10-button-start-loading'}
-                        onClick={setLoading}
+                                 id={'hw10-button-start-loading'}
+                                 onClick={setLoading}
                     >
                         Set loading...
                     </SuperButton>
                 )}
             </div>
+            <Line/>
         </div>
     );
 };
