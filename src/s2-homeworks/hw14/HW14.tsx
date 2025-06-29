@@ -4,6 +4,7 @@ import s from './HW14.module.css';
 import axios from 'axios';
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput';
 import {useSearchParams} from 'react-router-dom';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
@@ -67,7 +68,7 @@ const HW14 = () => {
     return (
         <div id={'hw14'}>
             <div className={s2.hwTitle}>Homework #14</div>
-
+            <Line/>
             <div className={s2.hw}>
                 <div className={s.wrapInput}>
                     <SuperDebouncedInput
@@ -85,6 +86,7 @@ const HW14 = () => {
                     </div>
                 </div>
             </div>
+            <Line/>
         </div>
     );
 };

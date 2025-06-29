@@ -4,6 +4,7 @@ import s from './HW8.module.css';
 import s2 from '../../s1-main/App.module.css';
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton';
 import User from './User';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
@@ -54,8 +55,9 @@ const HW8 = () => {
     };
 
     return (
-        <div id={'hw3'}>
+        <div id={'hw8'}>
             <div className={s2.hwTitle}>Homework #8</div>
+            <Line/>
             <div className={s2.hw}>
                 <div className={s.container}>
                     <div className={s.buttonsContainer}>
@@ -93,6 +95,7 @@ const HW8 = () => {
                     </table>
                 </div>
             </div>
+            <Line/>
         </div>
     );
 };

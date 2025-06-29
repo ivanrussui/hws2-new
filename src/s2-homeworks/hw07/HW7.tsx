@@ -3,6 +3,7 @@ import SuperSelect from './common/c5-SuperSelect/SuperSelect';
 import SuperRadio from './common/c6-SuperRadio/SuperRadio';
 import s2 from '../../s1-main/App.module.css';
 import s from './HW7.module.css';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
@@ -28,11 +29,11 @@ const HW7 = () => {
     return (
         <div id={'hw7'}>
             <div className={s2.hwTitle}>Homework #7</div>
-
+            <Line/>
             {/*демонстрация возможностей компонент:*/}
             <div className={s2.hw}>
                 <div className={s.container}>
-                    <div>
+                    <div className={s.wrapSuperSelect}>
                         <SuperSelect
                             id={'hw7-super-select'}
                             options={arr}
@@ -51,6 +52,7 @@ const HW7 = () => {
                     </div>
                 </div>
             </div>
+            <Line/>
         </div>
     );
 };

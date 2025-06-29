@@ -7,6 +7,7 @@ import success200 from './images/200.svg';
 import error400 from './images/400.svg';
 import error500 from './images/500.svg';
 import errorUnknown from './images/error.svg';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - дописать функцию send
@@ -32,7 +33,7 @@ const HW13 = () => {
 
 
     const send = (x?: boolean | null) => () => {
-        setIsSending(x)
+        setIsSending(x);
 
         const url =
             x === null
@@ -76,7 +77,7 @@ const HW13 = () => {
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
-
+            <Line/>
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
                     <SuperButton
@@ -139,6 +140,7 @@ const HW13 = () => {
                     </div>
                 </div>
             </div>
+            <Line/>
         </div>
     );
 };

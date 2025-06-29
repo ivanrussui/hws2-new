@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {changeThemeId} from './bll/themeReducer';
 import {AppStoreType} from '../hw10/bll/store';
 import {ArrType} from '../hw07/HW7';
+import {Line} from '../hw01/common/Line';
 
 /*
 * 1 - в файле themeReducer.ts написать нужные типы вместо any, дописать редьюсер
@@ -38,7 +39,7 @@ const HW12 = () => {
             <div id={'hw12-text'} className={s2.hwTitle}>
                 Homework #12
             </div>
-
+            <Line/>
             <div className={s2.hw}>
                 <div className={s.selectWrapper}>
                     <SuperSelect
@@ -51,6 +52,7 @@ const HW12 = () => {
                     />
                 </div>
             </div>
+            <Line/>
         </div>
     );
 };

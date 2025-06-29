@@ -1,3 +1,8 @@
 import s from './Loader.module.css';
 
-export const Loader = () => <div className={s.loader}/>;
+type LoaderProps = {
+    className?: string
+}
+
+export const Loader = ({className = ''}: LoaderProps) =>
+    <div className={`${s.loader} ${className}`.trim()}/>;

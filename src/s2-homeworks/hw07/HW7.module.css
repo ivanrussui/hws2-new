@@ -4,3 +4,7 @@
     align-items: flex-start;
     gap: 108px;
 }
+
+.wrapSuperSelect {
+    min-width: 180px;
+}
